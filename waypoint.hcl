@@ -6,15 +6,6 @@ app "example-nodejs" {
     "env"     = "dev"
   }
 
-  runner {
-    enable = true
-
-    data_source "git" {
-      url  = "https://github.com/briancain/waypoint-kubernetes-nodejs.git"
-      path = "."
-    }
-  }
-
   build {
     use "pack" {}
     registry {
